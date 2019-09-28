@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'chat', loadChildren: './chat/chat.module#ChatPageModule' },
   { path: 'single-challenge', loadChildren: './single-challenge/single-challenge.module#SingleChallengePageModule' },
   { path: 'challenge-completed', loadChildren: './challenge-completed/challenge-completed.module#ChallengeCompletedPageModule' },
+  { path: 'about', loadChildren: './about/about.module#AboutPageModule' },
 
 ];
 @NgModule({
