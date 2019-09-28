@@ -28,7 +28,7 @@ On the bottom, there's a buttom called "Challenges" that brings you always back 
 ## Fish consumption
 Once you've chosen the challenge "Fish consumption", you get to the next screen the "challenge screen". On this view, your progress in the challenge is shown. As the challenges are weekly challenges, the goal is to note everyday if you fulfilled the challenge task or not. You can click on the weekday buttons and check how the progress goes up. When the week is over, the App checks whether you met the challenge criteria often enough or not and gives you some feedback. 
 
-For this prototype, you can just click on some of the weekday buttons. As we cannot wait till one week is over, we've implemented a hidden fast forward buttton that brings you to the end of the challenge. The button is located on the XXXX.
+For this prototype, you can just click on some of the weekday buttons. As we cannot wait till one week is over, we've implemented a hidden fast forward buttton that brings you to the end of the challenge. The button is located on the top right.
 
 ## Learning more about the penguins
 Ths challenge is just for informational purpose and gives you more data to different penguin species. You can see a screen with five different penguin species and click on one of them for learning more about them. All of them are implemented so you can just click on one penguin icon and it will direct yout to the details page.
