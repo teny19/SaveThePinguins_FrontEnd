@@ -3,7 +3,10 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { WelcomePage } from './welcome.page';
+import { NavigationComponent } from '../navigation/navigation.component';
+
 
 @NgModule({
   imports: [
@@ -12,6 +15,6 @@ import { WelcomePage } from './welcome.page';
     FormsModule,
     RouterModule.forChild([{ path: '', component: WelcomePage }])
   ],
-  declarations: [WelcomePage]
+  declarations: [WelcomePage, NavigationComponent]
 })
 export class WelcomePageModule {}

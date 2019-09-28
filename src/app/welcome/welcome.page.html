@@ -1,16 +1,17 @@
 
-<ion-content scroll="false">
-    <section class="welcome-container">
-        <div class = "text-center">
-           <img src="../../assets/img/penguin.png" class = "logo" />
-        </div>
-        <div class = "ion-text-center">
-          <ion-text>
-            <h1>Welcome to the Penguin App!</h1>
-          </ion-text>
-        </div>
-        <div class = "button-row ion-text-center" routerLink = "/tabs">
-          <ion-button>Continue</ion-button>
-        </div>           
-    </section>
+<ion-content scroll="false" class="welcome-container">
+    <div class = "ion-text-center logo">
+       <ion-img src="../../assets/img/penguin.png"></ion-img>
+    </div>
+    <div class = "ion-text-center">
+      <ion-text>
+        <h1>Welcome to the Penguin App!</h1>
+      </ion-text>
+    </div>
+    <div class = "button-row ion-text-center" routerLink = "/tabs/tab1">
+      <ion-button>Let's start!</ion-button>
+    </div>
+    <div>
+      <app-navigation></app-navigation>
+    </div>
 </ion-content>
