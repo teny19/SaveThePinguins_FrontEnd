@@ -1,43 +1,56 @@
-
 <ion-content scroll="false" class="welcome-container">
     <ion-slides #theSlides>
         <ion-slide>
-          <div>
-            <img src="../../assets/img/penguin.png" style="width: 200px; margin-top: 100px;" />
-            <h2>Welcome to the <b>[ Penguin App ]</b></h2>
-            <p>The Penguins need your help. <br /> Swipe left to get started!</p>
-          </div>
+            <div>
+                <img
+                    src="../../assets/img/penguin.png"
+                    style="width: 200px; margin-top: 100px;"
+                />
+                <h2>Welcome to the <b>[ Penguin App ]</b></h2>
+                <p>
+                    The Penguins need your help. <br />
+                    Swipe left to get started!
+                </p>
+            </div>
         </ion-slide>
 
         <ion-slide>
-          <div>
-            <h2>Choose your Guide</h2>
-            <ion-list>
-             <ion-item 
-                button 
-                *ngFor="let penguin of penguins"
-                (click)="move(theSlides, 2, penguin.name)">
-                <ion-avatar class = "penguin">
-                  <img [src]="'../../assets/img/' + penguin.img" />
-                </ion-avatar>
-                <ion-label>{{penguin.name}} <br /> {{penguin.age}} yrs</ion-label>
-              </ion-item>
-            </ion-list>
-          </div>
+            <div>
+                <h2>Choose your Guide</h2>
+                <ion-list>
+                    <ion-item
+                        button
+                        *ngFor="let penguin of penguins"
+                        (click)="move(theSlides, 2, penguin.name)"
+                    >
+                        <ion-avatar class="penguin">
+                            <img [src]="'../../assets/img/' + penguin.img" />
+                        </ion-avatar>
+                        <ion-label
+                            >{{ penguin.name }} <br />
+                            {{ penguin.age }} yrs</ion-label
+                        >
+                    </ion-item>
+                </ion-list>
+            </div>
         </ion-slide>
         <ion-slide>
-          <div class="penguin-speech">
-            <div>
-              <h2>Hi I'm Franziska!</h2>
-              <p>Thank you for choosing me :)! <br /> Some more infos about </p>
-              <ion-button routerLink="/challenges">Let's start with a challenge</ion-button>
+            <div class="penguin-speech">
+                <div>
+                    <h2>Hi I'm Franziska!</h2>
+                    <p>
+                        Thank you for choosing me :)! <br />
+                        Some more infos about
+                    </p>
+                    <ion-button routerLink="/challenges"
+                        >Let's start with a challenge</ion-button
+                    >
+                </div>
             </div>
-          </div>
         </ion-slide>
-      </ion-slides>
+    </ion-slides>
 </ion-content>
 
-
-    <!-- <ion-content fullscreen padding scroll-y="true">
+<!-- <ion-content fullscreen padding scroll-y="true">
       
     </ion-content> -->
