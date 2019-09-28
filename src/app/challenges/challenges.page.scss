@@ -1,0 +1,30 @@
+.difficulty {
+    display: flex;
+    margin-top: 5px;
+    span {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+        background-color: lightgrey;
+        &.active {
+           
+            &.level-1 {
+              background-color: rgb(4, 173, 4);
+        }
+          &.level-2 {
+            background-color: rgb(8, 115, 255);
+        }
+           &.level-3 {
+            background-color: rgb(10, 71, 151);
+        }
+          &.level-4 {
+            background-color: rgb(158, 50, 50);
+        }
+        &.level-5 {
+             background-color: rgb(93, 31, 31);
+        }
+        }
+      
+    }
+}
