@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { WelcomePage } from './welcome.page';
-import { NavigationComponent } from '../navigation/navigation.component';
 
 
 @NgModule({
@@ -15,6 +14,6 @@ import { NavigationComponent } from '../navigation/navigation.component';
     FormsModule,
     RouterModule.forChild([{ path: '', component: WelcomePage }])
   ],
-  declarations: [WelcomePage, NavigationComponent]
+  declarations: [WelcomePage]
 })
 export class WelcomePageModule {}

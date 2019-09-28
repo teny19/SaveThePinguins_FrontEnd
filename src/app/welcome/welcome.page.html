@@ -1,44 +1,38 @@
 
 <ion-content scroll="false" class="welcome-container">
-    <!-- <div class = "ion-text-center logo">
-       <ion-img src="../../assets/img/penguin.png"></ion-img>
-    </div>
-    <div class = "ion-text-center">
-      <ion-text>
-        <h1>Welcome to the Penguin App!</h1>
-      </ion-text>
-    </div>
-    <div class = "button-row ion-text-center" routerLink = "/tabs/tab1">
-      <ion-button>Let's start!</ion-button>
-    </div>
-    <div>
-      <app-navigation></app-navigation>
-    </div> -->
-
-    <ion-slides>
-
+    <ion-slides #theSlides>
         <ion-slide>
-          <img src="../../assets/img/penguin.png"/>
-          <h2>Welcome to the <b>ICA</b></h2>
-          <p>The <b>ionic conference app</b> is a practical preview of the ionic framework in action, and a demonstration of proper code use.</p>
+          <div>
+            <img src="../../assets/img/penguin.png" style="width: 200px; margin-top: 100px;" />
+            <h2>Welcome to the <b>[ Penguin App ]</b></h2>
+            <p>The Penguins need your help. <br /> Swipe left to get started!</p>
+          </div>
         </ion-slide>
 
         <ion-slide>
-          <img src="../../assets/img/penguin.png"/>
-          <h2>What is Ionic?</h2>
-          <p><b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.</p>
+          <div>
+            <h2>Choose your Guide</h2>
+            <ion-list>
+             <ion-item 
+                button 
+                *ngFor="let penguin of penguins"
+                (click)="move(theSlides, 2, penguin.name)">
+                <ion-avatar class = "penguin">
+                  <img [src]="'../../assets/img/' + penguin.img" />
+                </ion-avatar>
+                <ion-label>{{penguin.name}} <br /> {{penguin.age}} yrs</ion-label>
+              </ion-item>
+            </ion-list>
+          </div>
         </ion-slide>
-
         <ion-slide>
-          <img src="../../assets/img/penguin.png"/>
-          <h2>What is Ionic Pro?</h2>
-          <p><b>Ionic Pro</b> is a powerful set of services and features built on top of Ionic Framework that brings a totally new level of app development agility to mobile dev teams.</p>
-        </ion-slide>
-
-        <ion-slide>
-          <img src="../../assets/img/penguin.png"/>
-          <h2>Ready to Play?</h2>
-          <ion-button routerLink="/home" fill="clear">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+          <div class="penguin-speech">
+            <div>
+              <h2>Hi I'm Franziska!</h2>
+              <p>Thank you for choosing me :)! <br /> Some more infos about </p>
+              <ion-button routerLink="/challenges">Let's start with a challenge</ion-button>
+            </div>
+          </div>
         </ion-slide>
       </ion-slides>
 </ion-content>

@@ -5,22 +5,22 @@
 </ion-header>
 
 <ion-content>
+
+    <h2>Active Challenge</h2>
     <ion-card>
         <img class="card-img"
             src="https://www.n-joy.de/entertainment/pinguin202_v-vierspaltig.jpg"
         />
         <ion-card-header>
-            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-            <ion-card-title>Card Title</ion-card-title>
+            <ion-card-title>Overfishing</ion-card-title>
         </ion-card-header>
 
         <ion-card-content style="padding-top: 0">
-            Keep close to Nature's heart... and break clear away, once in
-            awhile, and climb a mountain or spend a week in the woods. Wash your
-            spirit clean.
+            This week I challenge you to reduce your fish consumption and not to eat penguin prey -  you are not penguin. (: How you can do it? Eat less fish, but if you do, eat locally and sustainably harvested fish.
         </ion-card-content>
+        <ion-button (click)="openModal()">More</ion-button>
     </ion-card>
-    <ion-card>
+<!--     <ion-card>
         <img class="card-img" src="../../assets/img/save_plastic.jpeg" />
         <ion-card-header>
             <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
@@ -32,5 +32,6 @@
             awhile, and climb a mountain or spend a week in the woods. Wash your
             spirit clean.
         </ion-card-content>
-    </ion-card>
+    </ion-card> -->
+    <app-navigation></app-navigation>
 </ion-content>
