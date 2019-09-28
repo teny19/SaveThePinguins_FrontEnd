@@ -1,36 +1,42 @@
 <ion-header>
     <ion-toolbar>
-        <ion-title>Home</ion-title>
+        <ion-title>Fish consumption</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-    <h2>Active Challenge</h2>
-    <ion-card>
-        <img class="card-img"
-            src="https://www.n-joy.de/entertainment/pinguin202_v-vierspaltig.jpg"
-        />
-        <ion-card-header>
-            <ion-card-title>Overfishing</ion-card-title>
-        </ion-card-header>
+    <h2>Your Progress</h2>
+    <div class="set-size charts-container">
+      <div class="pie-wrapper progress-30">
+        <span class="label">{{percentage}}<span class="smaller">%</span></span>
+        <div class="pie">
+          <div class="left-side half-circle"></div>
+          <div class="right-side half-circle"></div>
+        </div>
+      </div>
+    </div>
+    <div>
+        <ion-list style="width: 100%;">
+          <ion-list-header>Accomplished Days!</ion-list-header>
+          <ion-item>
+            <ion-button size="small" color="primary">MON</ion-button>
+            <ion-button size="small" color="primary">TUE</ion-button>
+            <ion-button size="small" [attr.color]="btnActive ? 'primary' : 'light'" (click)="presentToast()">WED</ion-button>
+            <ion-button size="small" color="light">THU</ion-button>
+            <ion-button size="small" color="light">FR</ion-button>
+            <ion-button size="small" color="light">SA</ion-button>
+            <ion-button size="small" color="light">SUN</ion-button>
+          </ion-item>
+        </ion-list>
+    </div>
 
-        <ion-card-content style="padding-top: 0">
-            This week I challenge you to reduce your fish consumption and not to eat penguin prey -  you are not penguin. (: How you can do it? Eat less fish, but if you do, eat locally and sustainably harvested fish.
-        </ion-card-content>
-        <ion-button (click)="openModal()">More</ion-button>
-    </ion-card>
-<!--     <ion-card>
-        <img class="card-img" src="../../assets/img/save_plastic.jpeg" />
-        <ion-card-header>
-            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-            <ion-card-title>Card Title</ion-card-title>
-        </ion-card-header>
-
-        <ion-card-content style="padding-top: 0">
-            Keep close to Nature's heart... and break clear away, once in
-            awhile, and climb a mountain or spend a week in the woods. Wash your
-            spirit clean.
-        </ion-card-content>
-    </ion-card> -->
+    <div class="button-container">
+        <ion-button expand="block" routerLink="/single-challenge">More Info</ion-button>
+    </div>
+    <ion-fab vertical="top" horizontal="end" edge slot="fixed">
+      <ion-fab-button color="light" routerLink="/challenge-completed">
+        <ion-icon name="fastforward"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
 </ion-content>
