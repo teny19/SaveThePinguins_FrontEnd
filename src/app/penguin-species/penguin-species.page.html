@@ -1,9 +1,41 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>penguin-species</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<ion-content class="">
+    <div class="species-container" [ngClass]="selectedSpecie.id != 0 ? 'specice-selected':''">
+        <div class="specice-selected-container">
+            <img [src]="'../../assets/img/species/' +selectedSpecie.img"/>
+        </div>
+        <h2>Let's Save Penguins!</h2>
+        <ul
+            class="radial-nav"
+            (click)="showAll($event)"
+            [ngClass]="[expanded ? ' expanded' : '']"
+        >
+            <li
+                class="penguin-avatar"
+                [attr.data-content]="specie.name"
+                *ngFor="let specie of species"
+                [ngClass]="[specie.id == selectedSpecie.id ? ' selected' : '']"
+            >
+                <a (click)="showPenguin($event, specie.id)">
+                    <img [src]="'../../assets/img/species/' + specie.img" />
+                </a>
+            </li>
+            <li class="menu" *ngIf="selectedSpecie.id == 0">
+                <ion-button>Start</ion-button>
+                <!-- <ion-fab size="large" vertical="center" horizontal="center" slot="fixed">
+                    <ion-fab-button>
+                        <ion-icon name="md-apps"></ion-icon>
+                    </ion-fab-button>
+                    <ion-fab-list side="top" style="display: none">
+                        <ion-fab-button
+                            ><ion-icon name="logo-vimeo"></ion-icon
+                        ></ion-fab-button>
+                    </ion-fab-list>
+                </ion-fab> -->
+            </li>
+        </ul>
+        <div class="specice-selected-container-content">
+            <h2 class="ion-text-center" style="margin-top: 70px;">{{selectedSpecie.name}}</h2>
+            <p style="padding: 10px 15px;">{{selectedSpecie.desc}}</p>
+        </div>
+    </div>
 </ion-content>
