@@ -7,19 +7,28 @@
             style="padding: 5px 0; margin: 10px 5px; "
             *ngFor="let challenge of challenges"
         >
-            <ion-item>
+            <ion-item [routerLink]="challenge.url" routerDirection="forward">
                 <ion-avatar slot="start" style="width: 85px; height: 85px;">
                     <img
-                        src="./avatar-finn.png"
+                        [src]="'../../assets/img/' + challenge.img"
                         style="background-color: lightgrey"
                     />
                 </ion-avatar>
                 <ion-label class="card">
-                    <h2>{{challenge.name}}</h2>
-                    <p style="height: 35px; white-space: initial;">{{challenge.desc}}</p>
+                    <h2>{{ challenge.name }}</h2>
+                    <p style="height: 35px; white-space: initial;">
+                        {{ challenge.desc }}
+                    </p>
                     <div class="difficulty">
-                      <span *ngFor="let x of [1,2,3,4,5]" [ngClass]="challenge.level >= x ? 'active ' +'level-'+challenge.level  :''"></span>
-                      <!-- <span></span>
+                        <span
+                            *ngFor="let x of [1, 2, 3, 4, 5]"
+                            [ngClass]="
+                                challenge.level >= x
+                                    ? 'active ' + 'level-' + challenge.level
+                                    : ''
+                            "
+                        ></span>
+                        <!-- <span></span>
                       <span></span>
                       <span></span>
                       <span></span>
