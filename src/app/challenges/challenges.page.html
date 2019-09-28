@@ -1,15 +1,10 @@
-<ion-header>
-    <ion-toolbar>
-        <ion-list-header>
-            Upcoming Challenges
-        </ion-list-header>
-    </ion-toolbar>
-</ion-header>
-
+<ion-toolbar color="primary">
+    <ion-title>Upcoming Challenges</ion-title>
+</ion-toolbar>
 <ion-content>
-    <ion-list lines="none" style="background-color: lightblue">
+    <ion-list lines="none">
         <ion-card
-            style="padding: 5px 0; margin: 10px 5px; box-shadow: none; background-color: #fff;"
+            style="padding: 5px 0; margin: 10px 5px; "
             *ngFor="let challenge of challenges"
         >
             <ion-item>
