@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: 'challenges', loadChildren: './challenges/challenges.module#ChallengesPageModule' },
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
   { path: 'penguin-species', loadChildren: './penguin-species/penguin-species.module#PenguinSpeciesPageModule' },
+  { path: 'chat', loadChildren: './chat/chat.module#ChatPageModule' },
 
 ];
 @NgModule({
