@@ -4,7 +4,7 @@
         <ion-tab-bar
             color="primary"
             slot="bottom"
-            [ngClass]="router.url == '/' || router.url == '/chat' ? 'hide' : ''"
+            [ngClass]="router.url == '/' || router.url == '/chat' || router.url == '/challenge-completed' || router.url == '/penguin-species' ? 'hide' : ''"
         >
             <ion-tab-button tab="home">
                 <ion-icon name="home"></ion-icon>
