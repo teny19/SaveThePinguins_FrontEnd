@@ -6,7 +6,7 @@ const routes: Routes = [
   { path: 'messaging', loadChildren: './messaging/messaging.module#MessagingPageModule' },
   { path: 'challenges', loadChildren: './challenges/challenges.module#ChallengesPageModule' },
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
-  { path: 'penguin-species', loadChildren: './penguin-species/penguin-species.module#PenguinSpeciesPageModule' },  { path: 'modal', loadChildren: './modal/modal.module#ModalPageModule' }
+  { path: 'penguin-species', loadChildren: './penguin-species/penguin-species.module#PenguinSpeciesPageModule' },
 
 ];
 @NgModule({
