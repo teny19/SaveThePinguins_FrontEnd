@@ -30,7 +30,7 @@ export class PenguinSpeciesPage implements OnInit {
   {
      id: 4,
      name: 'African Penguin',
-     img: 'africanPEnguin.png',
+     img: 'africanPenguin.png',
      cover: 'coverimage.jpg',
 
      desc: 'This penguin species is 60 - 70 cm tall and weights 2.2 - 3.5 kg. It lives in the coastal region of southern africa and its diet consists of pelagic schooling fish. It can live over 20 years long.'
