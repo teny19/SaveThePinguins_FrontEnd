@@ -1,42 +1,48 @@
 <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="primary">
         <ion-title>Fish consumption</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
     <h2>Your Progress</h2>
     <div class="circle-container">
-      <div [ngClass]="[ percentage == 30 ? 'c100 p30 big' : 'c100 p40 big' ]">
-        <span>{{percentage}}%</span>
-        <div class="slice">
-          <div class="bar"></div>
-          <div class="fill"></div>
+        <div [ngClass]="[percentage == 30 ? 'c100 p30 big' : 'c100 p40 big']">
+            <span style="color:#3880ff;"> {{ percentage }}% </span>
+            <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+            </div>
         </div>
-      </div>
     </div>
     <div>
         <ion-list style="width: 100%;">
-          <ion-list-header>Accomplished Days!</ion-list-header>
-          <ion-item>
-            <ion-button size="small" color="primary">MON</ion-button>
-            <ion-button size="small" color="primary">TUE</ion-button>
-            <ion-button size="small" [attr.color]="btnActive ? 'primary' : 'light'" (click)="presentToast()">WED</ion-button>
-            <ion-button size="small" color="light">THU</ion-button>
-            <ion-button size="small" color="light">FR</ion-button>
-            <ion-button size="small" color="light">SA</ion-button>
-            <ion-button size="small" color="light">SUN</ion-button>
-          </ion-item>
+            <ion-list-header>Accomplished Days!</ion-list-header>
+            <ion-item>
+                <ion-button size="small" color="primary">MON</ion-button>
+                <ion-button size="small" color="primary">TUE</ion-button>
+                <ion-button
+                    size="small"
+                    [attr.color]="btnActive ? 'primary' : 'light'"
+                    (click)="presentToast()"
+                    >WED</ion-button
+                >
+                <ion-button size="small" color="light">THU</ion-button>
+                <ion-button size="small" color="light">FR</ion-button>
+                <ion-button size="small" color="light">SA</ion-button>
+                <ion-button size="small" color="light">SUN</ion-button>
+            </ion-item>
         </ion-list>
     </div>
 
     <div class="button-container">
-        <ion-button expand="block" routerLink="/single-challenge">Get Challenge Details</ion-button>
+        <ion-button expand="block" routerLink="/single-challenge"
+            >Get Challenge Details</ion-button
+        >
     </div>
     <ion-fab vertical="top" horizontal="end" edge slot="fixed">
-      <ion-fab-button color="light" routerLink="/challenge-completed">
-        <ion-icon name="fastforward"></ion-icon>
-      </ion-fab-button>
+        <ion-fab-button color="light" routerLink="/challenge-completed">
+            <ion-icon name="fastforward"></ion-icon>
+        </ion-fab-button>
     </ion-fab>
 </ion-content>
