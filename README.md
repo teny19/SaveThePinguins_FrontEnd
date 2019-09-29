@@ -4,7 +4,11 @@ Welcome to our App "Save the penguins"! This App is intended to make people awar
 
 In this App, you will find weekly challenges that may help to save the penguin's habitat. In addition, this App provides you a whole bunch of information and fun facts about penguins. So let's get started!
 
-## How to get started
+## How to run the app
+1. Install Ionic using command: npm install -g ionic
+2. run command: ionic serve
+
+## Getting started
 
 When you start the App for the first time, you see the welcome screen of the App. Swipe left for getting started. On the next screen, you can choose one of the penguins from the Zoo Zurich as your guide. This penguin will explain you the challenges and help you navigate through the App. 
 
