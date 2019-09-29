@@ -7,12 +7,12 @@
 <ion-content>
 
     <h2>Your Progress</h2>
-    <div class="set-size charts-container">
-      <div class="pie-wrapper progress-30">
-        <span class="label">{{percentage}}<span class="smaller">%</span></span>
-        <div class="pie">
-          <div class="left-side half-circle"></div>
-          <div class="right-side half-circle"></div>
+    <div class="circle-container">
+      <div [ngClass]="[ percentage == 30 ? 'c100 p30 big' : 'c100 p40 big' ]">
+        <span>{{percentage}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@
     </div>
 
     <div class="button-container">
-        <ion-button expand="block" routerLink="/single-challenge">More Info</ion-button>
+        <ion-button expand="block" routerLink="/single-challenge">Get Challenge Details</ion-button>
     </div>
     <ion-fab vertical="top" horizontal="end" edge slot="fixed">
       <ion-fab-button color="light" routerLink="/challenge-completed">
