@@ -46,4 +46,6 @@ When you've met the criteria of the challenge often enough, you succeeded in the
 ## Additional functions
 If we would have more time, we would have implemented a chat function where the user could interact with the penguin and get notifications from it. This could serve the Zoo as a channel for informing users about upcoming events that take place in the Zoo (for example the Penguin Parade in winter). Or a user could get updates on his chosen guide penguin and how he's doing in the Zoo. This chat function is only simulated and it shows how it could possibly look like if we would have had the time to implement it. For getting to the chat screen, click the chat button on the bottom.
 
+![alt text](http://resources/screenshots/chat.png)
+
 We hope that our App helps to raise awareness about the lives of penguins and the challenges that they face everyday. Let's save the penguins!
