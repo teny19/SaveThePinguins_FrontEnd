@@ -4,6 +4,8 @@ Welcome to our App **Peyond**! This App is intended to make people aware of the 
 
 In this App, you will find weekly challenges that may help to save the penguin's habitat. In addition, this App provides you a whole bunch of information and fun facts about penguins. So let's get started!
 
+![alt text](resources/screenshots/01_welcomeScreen.png)
+
 ## How to run the app
 1. Install Ionic using command: npm install -g ionic
 2. run command: ionic serve
