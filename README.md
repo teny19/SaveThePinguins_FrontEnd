@@ -20,7 +20,7 @@ Our idea behind this is that visitors of the Zoo Zurich can download the App whi
 
 Once you've chosen one of the penguins and spotted it in the Zoo, the penguin presents itself to the user and gives some facts about himself. 
 
-![alt text](resources/screenshots/localhost_8100_(iPhone 6_7_8) (2).png)
+![alt text](resources/screenshots/localhost_8100_(iPhone 6_7_8)%20(2).png)
 
 Once you're done reading the introduction from your guide, click on "Let's start with a challenge".
 
@@ -34,7 +34,7 @@ On the next screen, you see a list of challenges that could help to save the hab
 * World clean up day: This is a more general challenge that tries to make the world a cleaner place. It's an event that takes place worldwide and on this special day, people all around the world clean up the environment. This again could lead to less plastic polluting the oceans.
 
 
-![alt text](resources/screenshots/localhost_8100_(iPhone 6_7_8) (3).png)
+![alt text](resources/screenshots/localhost_8100_(iPhone 6_7_8)%20(3).png)
 
 On the bottom, there's a buttom called "Challenges" that always brings you back to this screen. For this prototype, only the challenge "Fish consumption" and "Know more about penguins" are working so please pick one of those.  
 
