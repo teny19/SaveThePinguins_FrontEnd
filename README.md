@@ -12,11 +12,17 @@ In this App, you will find weekly challenges that may help to save the penguin's
 
 When you start the App for the first time, you see the welcome screen of the App. Swipe left for getting started. On the next screen, you can choose one of the penguins from the Zoo Zurich as your guide. This penguin will explain you the challenges and help you navigate through the App. 
 
+![alt text](/resources/screenshots/guide.png)
+
 Our idea behind this is that visitors of the Zoo Zurich can download the App while they're in the Zoo watching the penguins. This also allows them to select one of the penguin characters from the App and try to spot this specific penguin in the Zoo with the help of the collars that the penguins are wearing. This could create some kind of a bond between the user and the penguin. For this prototype, only the penguin "Franziska" is working so please choose this one.
 
 ## Getting to know your guide
 
-Once you've chosen one of the penguins and spotted it in the Zoo, the penguin presents itself to the user and gives some facts about himself. Once you're done reading the introduction from your guide, click on "Let's start with a challenge".
+Once you've chosen one of the penguins and spotted it in the Zoo, the penguin presents itself to the user and gives some facts about himself. 
+
+![alt text](resources/screenshots/introduction.png)
+
+Once you're done reading the introduction from your guide, click on "Let's start with a challenge".
 
 ## The challenges
 On the next screen, you see a list of challenges that could help to save the habitat of penguins or learning more about penguins in general. YOu can read a short intro about the challenge and the dots on the bottom show you, how hard a challenge is from 1 = easy to five = hard. All challenges (except the "Learning more about penguins " challenge) last one week. The following challenges are available:
@@ -27,10 +33,14 @@ On the next screen, you see a list of challenges that could help to save the hab
 * World clean up day: This is a more general challenge that tries to make the world a cleaner place. It's an event that takes place worldwide and on this special day, people all around the world clean up the environment. This again could lead to less plastic polluting the oceans.
 * Learning more about penguins: In this challenge, you learn more about some existing penguin species. You get some interesting facts about penguins and learn more about their lives. 
 
+![alt text](resources/screenshots/challenges.png)
+
 On the bottom, there's a buttom called "Challenges" that always brings you back to this screen. For this prototype, only the challenge "Fish consumption" and "Learning more about the penguins" are working so please pick one of those.  
 
 ## Fish consumption
 Once you've chosen the challenge "Fish consumption", you get to the next screen the "Challenge Screen". On this view, your progress in the challenge is shown. As the challenges are weekly challenges, the goal is to note down everyday if you fulfilled the challenge criteria or not. You can click on the weekday buttons and check how the progress goes up. When the week is over, the App checks whether you met the challenge criteria often enough or not and gives you some feedback. 
+
+![alt text](resources/screenshots/activechallenge30.png)
 
 For this prototype, you can just click on some of the weekday buttons. As we cannot wait till one week is over, we've implemented a fast forward buttton that simulated that one week is over and brings you to the end of the challenge. The button is located on the top right.
 
@@ -45,5 +55,7 @@ When you've met the criteria of the challenge often enough, you succeeded in the
 
 ## Additional functions
 If we would have more time, we would have implemented a chat function where the user could interact with the penguin and get notifications from it. This could serve the Zoo as a channel for informing users about upcoming events that take place in the Zoo (for example the Penguin Parade in winter). Or a user could get updates on his chosen guide penguin and how he's doing in the Zoo. This chat function is only simulated and it shows how it could possibly look like if we would have had the time to implement it. For getting to the chat screen, click the chat button on the bottom.
+
+![alt text](/resources/screenshots/chat.png)
 
 We hope that our App helps to raise awareness about the lives of penguins and the challenges that they face everyday. Let's save the penguins!
